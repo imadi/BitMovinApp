@@ -3,8 +3,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var app = express();
-var AWS_KEY = "YOUR";
-var AWS_SECRET = "";
+var AWS_KEY = "YOUR_AWS_KEY";
+var AWS_SECRET = "YOUR_AWS_SECRET";
 var ENCODING_PROFILE_ID = 122195;
 var OUTPUT_ID = 185573;
 var INPUT_ID = 597127;
@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-var bitcodin = require('bitcodin')('f87ed0ab31781dd2465254dc696becfa329507a5e879cd77ad15c66fc5d3ef98');
+var bitcodin = require('bitcodin')('your bitmovin api key');
 var inputConfig = {
     type: 's3',
     accessKey: AWS_KEY,
