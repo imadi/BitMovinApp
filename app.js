@@ -16,8 +16,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 var bitcodin = require('bitcodin')('your bitmovin api key');
 var inputConfig = {
     type: 's3',
-    accessKey: AWS_KEY,
-    secretKey: AWS_SECRET,
+    accessKey: YOUR_AWS_KEY,
+    secretKey: YOUR_AWS_SECRET,
     bucket: 'inpbk',
     region: 'eu-west-1',
     objectKey: 'video.mp4'
