@@ -1,2 +1,2 @@
 # BitMovinApp
-Sample App to do encoding of video's using Bitmovin
+Sample App to do encoding of video's using Bitmovin1
