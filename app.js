@@ -31,7 +31,7 @@ var opConfig = {
     name: 'AWS OP'
 };
 var encodingProfileConfiguration = {
-    "name": "Airfi Encoding Profile",
+    "name": "Encoding Profile",
     "videoStreamConfigs": [{
         "defaultStreamId": 0,
         "bitrate": 300000,
